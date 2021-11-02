@@ -1,0 +1,199 @@
+body{
+    background-color: black;
+}
+.pghead{
+    display: flex;
+    background-color: black;
+    color: white;
+    /*border: solid rebeccapurple 1px;*/
+    text-align: center;
+    height: 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.pghead>*{
+    flex:1;
+}
+
+.srtbtns{
+    padding-top: 1.5%;
+}
+.srtbtns button{
+    margin-right: 3%;
+    cursor: pointer;
+    font-weight: bolder;
+
+}
+
+
+.lftHdrDiv{
+    display: flex;
+}
+
+.lftHdrDiv>div{
+    flex:1;
+    padding-top: 3%;
+}
+
+.gnaButton{
+    margin: 3% 0 0 5%;
+}
+
+.sizeSlider,.speedSlider{
+    width: 80%;
+    height: 10%;
+    cursor: pointer;
+}
+
+.separator{
+    background-color: white;
+    display: inline-block;
+    height: 55px;
+    flex: 0.007;
+    margin-top: -1px;
+}
+
+.center-head{
+    padding-top: 10px;
+    font-size: 200%;
+    /*background-image: linear-gradient(to right, #f00b57 0%, #ca82d0 50%, rgb(189, 51, 9) 50%, rgb(208, 221, 27) 100%);;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;*/
+}
+
+.main-container{
+    height: 35.5rem;
+    display: flex;
+    margin: 10px 20px 0 20px;
+    background-color: white;
+}
+.info-outer{
+    flex:1;
+    position: relative;
+}
+
+
+.info-container{
+  position:absolute;
+  bottom:0;
+}
+.bars-outer{
+    flex:2;
+    margin-right: 2%;
+    text-align:center;
+    position:relative;
+}
+.bars-container{
+    display: inline-block;
+    position:absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0%;
+}
+
+.shadow{
+    background-color: rgb(253, 15, 15);
+    height: 2px;
+    margin-top: -4px;
+    margin-bottom: 5px;
+    border: rgb(0, 232, 248) 1px solid;
+}
+
+.array-bars{
+    position: relative;
+    display: inline-block;
+    font-size: 100%;
+    margin-top: 10px;
+    width: 5px;
+    margin-right: 1px;
+   background-color: turquoise;
+   border: rgb(0, 255, 106) solid 1px;
+   border-top: rgb(0, 174, 255) solid 2px;
+}
+.bar-val{
+    width: 100%;
+    position:absolute;
+    top:-5px;
+    color:black;
+}
+
+
+/*information bars CSS:*/
+.oprns-container,.algo-container,.algo-name{
+    margin:3px;
+    display:flex;
+    user-select:none;
+  }
+
+  #alg{
+    display: flex;
+    position:absolute;
+    width: 85%;
+    bottom: 48%;
+}
+
+  #algo-name{
+      flex: 1;
+      text-decoration: underline;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      margin-left: 1%;
+      font-size: 120%;
+  }
+
+  #stop{
+      flex: 1;
+      visibility: hidden;
+      text-align: right;
+      margin-bottom: 2%;
+  }
+  #stop>button{
+      padding: 2% 10% 2% 10%;
+      border-radius: 10%;
+      cursor: pointer;
+      background-color: rgb(252, 21, 67);
+      color:white;
+  }
+
+  
+  #oprns-clk{
+    cursor:pointer;
+    width:30px;
+    padding:5px;
+    text-align:center;
+    margin-right:3.5px;
+    background-color:#ff751a;
+  }
+  
+  #oprns{
+    font-size: 1em;
+    width:350px;
+    padding:5px;
+    text-align:center;
+    background-color:#ff751a;
+    visibility: hidden;
+  }
+  
+  #algo-clk{
+    cursor:pointer;
+    position:relative;
+    width:30px;
+    height:200px;
+    padding:5px;
+    text-align:center;
+    margin-right:3.5px;
+    background-color: #fcc100;
+  }
+  #algo{
+    height:200px;
+    width:350px;
+    padding:5px;
+    color: white;
+    background-color:#fc003f;
+    visibility: hidden;
+  }
+  
+  #algo-arrow{
+    position:absolute;
+    width:75%;
+    top:40%;
+  }
+  
